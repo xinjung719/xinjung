@@ -22,37 +22,10 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-example" style="background-color: rgb(31, 72, 90);">
-    <!--<div id="header"></div>-->
-    <nav class="navbar fixed-top navbar-dark" style="background-color: rgba(177, 177, 177, 0.14)">
-        <div class="container-fluid">
-            <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                <span class="navbar-toggler-icon"></span>
-            </a>
-            <a class="navbar-brand" href="#">
-                <img src="/img/logo.png" alt="欣君的網站" width="70">
-            </a>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-color: rgba(255, 255, 255, 0.8)">
-                <div class="offcanvas-header" style="background-color: rgb(31, 72, 90)">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                        <img src="/img/logo.png" alt="欣君的網站" width="70">
-                    </h5>
-                    <button type="button" class="btn-close text-reset bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body ">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 ">
-                        <div class="d-grid gap-2">
-                            <a class="btn btn-outline-secondary" href="/index.html" role="button">首頁</a>
-                            <a class="btn btn-outline-secondary" href="./apppages/app.html" role="button">APP 設計</a>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </nav>
+    <div id="header"></div>
     <!--banner-->
     <div class="card text-white">
-        <img src="/img/bannerIn.jpg" alt="欣君的網站" width="auto" height="300px">
+        <img src="/xinjung/img/bannerIn.jpg" alt="欣君的網站" width="auto" height="300px">
         <div class="card-img-overlay">
         </div>
         <div class="card-img-overlay position-absolute" style="top: 120px">
@@ -75,7 +48,7 @@
                         <div class="col">
                             <div class="card ">
                                 <div class="card">
-                                    <img src="/img/imgapp/pmtree.png" class="card-img-top" alt="PM Tree">
+                                    <img src="/xinjung/img/imgapp/pmtree.png" class="card-img-top" alt="PM Tree">
                                     <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.51)">
                                         <h4 class="card-title text-center" style="background-color: rgba(255, 255, 255, 0.14)">PM Tree</h4>
                                         <h5 class="card-title">APP Prototype</h5>
@@ -88,7 +61,7 @@
                         <div class="col">
                             <div class="card ">
                                 <div class="card">
-                                    <img src="/img/imgapp/Trash+.png" class="card-img-top" alt="PM Tree">
+                                    <img src="/xinjung/img/imgapp/Trash+.png" class="card-img-top" alt="PM Tree">
                                     <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.51)">
                                         <h4 class="card-title text-center" style="background-color: rgba(255, 255, 255, 0.14)">Trash+</h4>
                                         <h5 class="card-title">APP Prototype</h5>
@@ -101,9 +74,9 @@
                         <div class="col">
                             <div class="card ">
                                 <div class="card">
-                                    <img src="/img/imgapp/Trash+.png" class="card-img-top" alt="PM Tree">
+                                    <img src="/xinjung/img/imgapp/argame.png" class="card-img-top" alt="PM Tree">
                                     <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.51)">
-                                        <h4 class="card-title text-center" style="background-color: rgba(255, 255, 255, 0.14)">Trash+</h4>
+                                        <h4 class="card-title text-center" style="background-color: rgba(255, 255, 255, 0.14)">搶救實驗室</h4>
                                         <h5 class="card-title">APP Prototype</h5>
                                         <p class="card-text">透過 Figma 製作</p>
                                     </div>
@@ -118,12 +91,14 @@
 
     </div>
     <br><br>
-    <footer></footer>
+    <footer>
+        <div id="footer"></div>
+    </footer>
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <script src="./header.js"></script>
-
+    <script src="/xinjung/js/header.js"></script>
+    <script src="/xinjung/js/footer.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
