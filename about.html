@@ -1,6 +1,5 @@
 <!doctype html>
-<html lang="en">
-
+<html>
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -21,192 +20,70 @@
         }
     </style>
 </head>
-
-<body data-bs-spy="scroll" data-bs-target="#navbar-example" style="background-color: rgb(31, 72, 90);">
+<body style="background-color: rgb(31, 72, 90);">
     <div id="header"></div>
-    <!--<nav class="navbar navbar-dark" style="background-color: rgba(177, 177, 177, 0.14)">
-        <div class="container-fluid">
-            <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                <span class="navbar-toggler-icon"></span>
-            </a>
-            <a class="navbar-brand" href="#">
-                <img src="/xinjung/img/logo.png" alt="欣君的網站" width="70">
-            </a>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-color: rgba(255, 255, 255, 0.8)">
-                <div class="offcanvas-header" style="background-color: rgb(31, 72, 90)">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                        <img src="/xinjung/img/logo.png" alt="欣君的網站" width="70">
-                    </h5>
-                    <button type="button" class="btn-close text-reset bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body ">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 ">
-                        <div class="d-grid gap-2">
-                            <a class="btn btn-outline-secondary" href="/xinjung/index.html" role="button">首頁</a>
-                            <a class="btn btn-outline-secondary" href="/xinjung/app.html" role="button">APP 設計</a>
-                            <a class="btn btn-outline-secondary" href="/xinjung/app.html" role="button">Web製作</a>
-                            <a class="btn btn-outline-secondary" href="/xinjung/app.html" role="button">關於我</a>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </nav>-->
     <!--banner-->
     <div class="card text-white">
         <img src="./img/bannerIn.jpg" alt="欣君的網站" width="auto" height="300px">
-        <div class="card-img-overlay">
-        </div>
         <div class="card-img-overlay position-absolute" style="top: 120px">
             <figure class="text-center">
                 <blockquote class="blockquote">
-                    <h1>首頁</h1>
+                    <h1>關於我</h1>
                 </blockquote>
                 <figcaption>
-                    <cite title="Source Title" style="color: azure">欣君的網站</cite>
+                    <cite title="Source Title" style="color: azure">About XinJung</cite>
                 </figcaption>
             </figure>
         </div>
     </div>
-    <!-- scrollspy -->
-    <nav id="navbar-example2" class=" sticky-top navbar justify-content-center" style="background-color: rgba(0, 0, 0, 0.35)">
-        <ul class="nav nav-pills nav-fill">
-            <li class="nav-item ">
-                <a class="nav-link nav-item" href="#scrollspyHeading1">基本資料</a>
-                <!-- <a class="nav-link " href="#scrollspyHeading1">First</a> -->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading2">APP設計</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading3">Web製作</a>
-            </li>
-        </ul>
-    </nav>
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-        <h4 id="scrollspyHeading1" class="m-0"></h4>
-        <div class="p-3 rounded" style="background-color: rgba(255, 255, 255, 0);height:auto">
-            <div class="container p-3 rounded" style="background-color:rgba(255, 255, 255, 0.19)">
-                <div class="row">
-                    <div class="col">
-                        <img src="/xinjung/img/260983.jpg" class="img-fluid pt-4" alt="...">
-                    </div>
-                    <div class="text-white col rounded" style="background-color: rgba(255, 255, 255, 0)">
-                        <p class="h1  text-center pt-2">蔣欣君</p>
-                        <ul class="list-unstyled">
-                            <li>學歷</li>
-                            <ul>
-                                <li>國立臺北教育大學</li>
-                                <p class="fw-light">- 數位科技設計學系玩具與遊戲設計碩士班</p>
-                            </ul>
-                        </ul>
-                    </div>
-                </div>
-                <ol class="text-end m-0"><a class="btn btn-outline-light" href="" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                        </svg> 更多</a></ol>
+    <!--about -->
+    <div class="container">
+        <div class="row mt-5 m-0">
+            <div class="col row-cols-1 row-cols-md-3 m-0 text-center">
+                <img src="/xinjung/img/260983.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col text-white  text-center" style="background-color: rgba(255, 255, 255, 0)">
+                <p class="h1 pt-2">蔣欣君</p>
+                <ol class="list-unstyled">
+                    <li ><span class="badge" style="background-color: #e0c21e">1</span> 挑戰自我</li>
+                    <li><span class="badge" style="background-color: #e2860a">2</span> 團隊合作</li>
+                    <li><span class="badge" style="background-color: #7c7c7c">3</span> 善於溝通</li>
+                </ol>
             </div>
         </div>
-        <h4 id="scrollspyHeading2" class="m-0 p-0"></h4>
-        <div class="p-3 rounded" style="rgba(255, 255, 255, 0);height:auto">
-            <div class="container p-3 rounded" style="background-color:rgba(255, 255, 255, 0)">
-                <div class="row text-white">
-                    <p class="h1 text-center">APP設計</p>
-                    <div class="row row-cols-1 row-cols-md-3 g-4 m-0">
-                        <!--pm tree -->
-                        <div class="col"></div>
-                        <div class="col">
-                            <div class="card ">
-                                <div class="card">
-                                    <img src="/xinjung/img/imgapp/pmtree.png" class="card-img-top" alt="PM Tree">
-                                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.51)">
-                                        <h4 class="card-title text-center" style="background-color: rgba(255, 255, 255, 0.14)">PM TREE</h4>
-                                        <h5 class="card-title">APP Prototype</h5>
-                                        <p class="card-text">透過Adobe XD製作</p>
-                                    </div>
-                                </div>
-                                <a class="btn btn-outline-danger" href="/apppages/app.html" role="button">PM TREE</a>
-                            </div>
-                        </div>
-                        <div class="col"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h4 id="scrollspyHeading3" class="m-0"></h4>
-        <div class="p-3 rounded" style="rgba(255, 255, 255, 0);height:auto">
-            <div class="container p-3 rounded" style="background-color:rgba(255, 255, 255, 0)">
-                <div class="row text-white">
-                    <p class="h1 text-center">Web製作</p>
-                    <div class="row row-cols-1 row-cols-md-3 g-4 m-0">
-                        <!--pm tree -->
-                        <div class="col"></div>
-                        <div class="col">
-                            <div class="card ">
-                                <div class="card">
-                                    <img src="/xinjung/img/imgapp/pmtree.png" class="card-img-top" alt="PM Tree">
-                                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.51)">
-                                        <h4 class="card-title text-center" style="background-color: rgba(255, 255, 255, 0.14)">PM TREE</h4>
-                                        <h5 class="card-title">APP Prototype</h5>
-                                        <p class="card-text">透過Adobe XD製作</p>
-                                    </div>
-                                </div>
-                                <a class="btn btn-outline-danger" href="/apppages/app.html" role="button">PM TREE</a>
-                            </div>
-                        </div>
-                        <div class="col"></div>
-                    </div>
+        <div class="row mt-5 m-0 text-white">
+            <p class="h1 text-center pt-2 pb-2" style="background-color: rgba(1, 52, 52, 0.27)">專長</p>
+            <div class="card col shadow p-3 mb-5 " style="width: 18rem;background-color: rgba(0, 216, 255, 0.15)">
+                <div class="card-body text-center">
+                    <blockquote class="blockquote text-center">
+                            <p>擅長工具</p>
+                    </blockquote>
+                    <figure>
+                        <h3>
+                            <span class="badge bg-light text-dark">Web</span>
+                        </h3>
+                        <figcaption>
+                            Visual Studio Code、Adobe Brackets
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <h3>
+                            <span class="badge bg-light text-dark">UI/UX</span>
+                        </h3>
+                        <figcaption>
+                            Figma、Adobe XD、Adobe Illustrator、Adobe Photoshop
+                        </figcaption>
+                    </figure><br>
+                    <span class="badge" style="background-color: rgba(3, 187, 255, 0.37)">Figma</span>
+                    <span class="badge" style="background-color: rgba(3, 187, 255, 0.37)">Adobe XD</span>
+                    <span class="badge" style="background-color: rgba(3, 187, 255, 0.37)">bootstrap</span>
+                    <span class="badge" style="background-color: rgba(3, 187, 255, 0.37)">使用者介面設計</span>
                 </div>
             </div>
         </div>
     </div>
-    <br><br>
     <footer>
-        <!--<div id="footer"></div>-->
-        <footer class="bd-footer py-5 mt-5 bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col text-center">
-                        <a class="d-inline-flex">
-                            <img src="img/logo.png" height="50px">
-                        </a>
-                        <ul class="list-unstyled small text-muted">
-                            <li class="mb-2">XinJung . 2022</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <table class="table table table-borderless">
-                            <tr>
-                                <td class="fw-bold">
-                                    <a href="/xinjung/index.html" class="text-decoration-none text-dark">首頁</a>
-                                </td>
-                                <td class="fw-bold">
-                                    <a href="/xinjung/app.html" class="text-decoration-none text-dark">APP設計</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="mb-2 fw-bold">
-                                    <a href="/xinjung/web.html" class="text-decoration-none text-dark">Web製作</a>
-                                </td>
-                                <td class="mb-2">
-                                    <a href="/xinjung/apppages/pmtree.html" class="text-decoration-none text-dark">PM Tree</a></td>
-                            </tr>
-                            <tr>
-                                <td class="mb-2"><a href="https://thinkabit.ntue.edu.tw/" class="text-decoration-none text-dark" target="_blank">微想實驗室</a></td>
-                                <td class="mb-2"><a href="/xinjung/apppages/trash.html" class="text-decoration-none text-dark">Trash+</a></td>
-                            </tr>
-                            <tr>
-                                <td class="mb-2 fw-bold"><a href="/xinjung/about.html" class="text-decoration-none text-dark">關於我</a></td>
-                                <td class="mb-2"><a href="/xinjung/apppages/argame.html" class="text-decoration-none text-dark">搶救實驗室</a></td>
-                            </tr>
-                        </table>
-
-                    </div>
-
-                </div>
-            </div>
-        </footer>
+        <div id="footer"></div>
     </footer>
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -218,4 +95,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     -->
-</body></html>
+</body>
+</html>

@@ -56,8 +56,6 @@
     <!--banner-->
     <div class="card text-white">
         <img src="./img/bannerIn.jpg" alt="欣君的網站" width="auto" height="300px">
-        <div class="card-img-overlay">
-        </div>
         <div class="card-img-overlay position-absolute" style="top: 120px">
             <figure class="text-center">
                 <blockquote class="blockquote">
@@ -85,20 +83,21 @@
         </ul>
     </nav>
     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <!--about -->
         <h4 id="scrollspyHeading1" class="m-0"></h4>
-        <div class="p-3 rounded" style="background-color: rgba(255, 255, 255, 0);height:auto">
+        <div class="p-3 rounded" style="height:auto">
             <div class="container p-3 rounded" style="background-color:rgba(255, 255, 255, 0.19)">
                 <div class="row">
-                    <div class="col">
+                    <div class="col row-cols-1 row-cols-md-3 m-0 text-center">
                         <img src="/xinjung/img/260983.jpg" class="img-fluid pt-4" alt="...">
                     </div>
                     <div class="text-white col rounded" style="background-color: rgba(255, 255, 255, 0)">
                         <p class="h1  text-center pt-2">蔣欣君</p>
                         <ul class="list-unstyled">
-                            <li>學歷</li>
+                            <li>專長</li>
                             <ul>
-                                <li>國立臺北教育大學</li>
-                                <p class="fw-light">- 數位科技設計學系玩具與遊戲設計碩士班</p>
+                                <li>UI/UX</li>
+                                <p class="fw-light">UI設計、使用者體驗</p>
                             </ul>
                         </ul>
                     </div>
@@ -108,17 +107,17 @@
                         </svg> 更多</a></ol>
             </div>
         </div>
+         <!--pm tree -->
         <h4 id="scrollspyHeading2" class="m-0 p-0"></h4>
-        <div class="p-3 rounded" style="rgba(255, 255, 255, 0);height:auto">
-            <div class="container p-3 rounded" style="background-color:rgba(255, 255, 255, 0)">
+        <div class="p-3 rounded" style="eight:auto">
+            <div class="container p-3 rounded" style="background-color:rgba(255, 255, 255, 0.08)">
                 <div class="row text-white">
-                    <p class="h1 text-center">APP設計</p>
-                    <div class="row row-cols-1 row-cols-md-3 g-4 m-0">
-                        <!--pm tree -->
+                    <p class="h1 text-center">APP製作</p>
+                    <div class="row row-cols-1 row-cols-md-3 m-0">
                         <div class="col"></div>
                         <div class="col">
-                            <div class="card ">
-                                <div class="card">
+                            <div class="card">
+                                <div class="card ">
                                     <img src="/xinjung/img/imgapp/pmtree.png" class="card-img-top" alt="PM Tree">
                                     <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.51)">
                                         <h4 class="card-title text-center" style="background-color: rgba(255, 255, 255, 0.14)">PM TREE</h4>
@@ -134,18 +133,19 @@
                 </div>
             </div>
         </div>
+        
         <h4 id="scrollspyHeading3" class="m-0"></h4>
-        <div class="p-3 rounded" style="rgba(255, 255, 255, 0);height:auto">
-            <div class="container p-3 rounded" style="background-color:rgba(255, 255, 255, 0)">
+        <div class="p-3 rounded" style="height:auto">
+            <div class="container p-3 rounded" style="background-color:rgba(255, 255, 255, 0.08)">
                 <div class="row text-white">
                     <p class="h1 text-center">Web製作</p>
-                    <div class="row row-cols-1 row-cols-md-3 g-4 m-0">
-                        <!--pm tree -->
-                        <div class="col"></div>
+                    <div class="row row-cols-1 row-cols-md-3 m-0">
+                        <!--WEB -->
+                         <div class="col"></div>
                         <div class="col">
                             <div class="card ">
                                 <div class="card">
-                                    <img src="/xinjung/img/imgapp/pmtree.png" class="card-img-top" alt="PM Tree">
+                                    <img src="/xinjung/img/imgapp/think.png" class="card-img-top" alt="PM Tree">
                                     <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.51)">
                                         <h4 class="card-title text-center" style="background-color: rgba(255, 255, 255, 0.14)">微想實驗室</h4>
                                         <p class="card-text">透過WordPress製作</p>
@@ -160,13 +160,12 @@
             </div>
         </div>
     </div>
-    <br><br>
     <footer>
         <div id="footer"></div>
-        <!--<footer class="bd-footer py-5 mt-5 bg-dark">
-            <div class="container ">
-                <div class="row">
-                    <div class="col text-center">
+       <!-- <footer class="bd-footer py-5 mt-5 bg-dark">
+            <div class="container text-center">
+                <div class="">
+                    <div class="col">
                         <a class="d-inline-flex">
                             <img src="img/logo.png" height="50px">
                         </a>
@@ -175,34 +174,34 @@
                         </ul>
                     </div>
                     <div class="col">
+                        <hr class="text-white">
                         <table class="table table table-borderless">
                             <tr>
                                 <td class="fw-bold">
-                                    <a href="/xinjung/index.html" class="text-decoration-none text-white">首頁</a>
+                                    <a href="/xinjung/index.html" class="text-decoration-none text-secondary">首頁</a>
                                 </td>
                                 <td class="fw-bold">
-                                    <a href="/xinjung/app.html" class="text-decoration-none text-white">APP設計</a>
+                                    <a href="/xinjung/app.html" class="text-decoration-none text-secondary">APP設計</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="mb-2 fw-bold">
-                                    <a href="/xinjung/web.html" class="text-decoration-none text-white">Web製作</a>
+                                    <a href="/xinjung/web.html" class="text-decoration-none text-secondary">Web製作</a>
                                 </td>
                                 <td class="mb-2">
-                                    <a href="/xinjung/apppages/pmtree.html" class="text-decoration-none text-white">PM Tree</a></td>
+                                    <a href="/xinjung/apppages/pmtree.html" class="text-decoration-none text-secondary">PM Tree</a>
+                                </td>
                             </tr>
                             <tr>
-                                <td class="mb-2"><a href="https://thinkabit.ntue.edu.tw/" class="text-decoration-none text-white" target="_blank">微想實驗室</a></td>
-                                <td class="mb-2"><a href="/xinjung/apppages/trash.html" class="text-decoration-none text-white">Trash+</a></td>
+                                <td class="mb-2"><a href="https://thinkabit.ntue.edu.tw/" class="text-decoration-none text-secondary" target="_blank">微想實驗室</a></td>
+                                <td class="mb-2"><a href="/xinjung/apppages/trash.html" class="text-decoration-none text-secondary">Trash+</a></td>
                             </tr>
                             <tr>
-                                <td class="mb-2 fw-bold"><a href="/xinjung/about.html" class="text-decoration-none text-white">關於我</a></td>
-                                <td class="mb-2"><a href="/xinjung/apppages/argame.html" class="text-decoration-none text-white">搶救實驗室</a></td>
+                                <td class="mb-2 fw-bold"><a href="/xinjung/about.html" class="text-decoration-none text-secondary">關於我</a></td>
+                                <td class="mb-2"><a href="/xinjung/apppages/argame.html" class="text-decoration-none text-secondary">搶救實驗室</a></td>
                             </tr>
                         </table>
-
                     </div>
-
                 </div>
             </div>
         </footer>-->
