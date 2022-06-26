@@ -32,7 +32,7 @@
             <a class="navbar-brand" href="#">
                 <img src="/xinjung/img/logo.png" alt="欣君的網站" width="70">
             </a>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-color: rgba(255, 255, 255, 0.8)">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-color: rgba(8, 63, 74, 0.67)">
                 <div class="offcanvas-header" style="background-color: rgb(31, 72, 90)">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">
                         <img src="/xinjung/img/logo.png" alt="欣君的網站" width="70">
@@ -42,10 +42,21 @@
                 <div class="offcanvas-body ">
                     <ul class="navbar-nav justify-content-end flex-grow-1 ">
                         <div class="d-grid gap-2">
-                            <a class="btn btn-outline-secondary" href="/xinjung/index.html" role="button">首頁</a>
-                            <a class="btn btn-outline-secondary" href="/xinjung/app.html" role="button">APP 設計</a>
-                            <a class="btn btn-outline-secondary" href="/xinjung/app.html" role="button">Web製作</a>
-                            <a class="btn btn-outline-secondary" href="/xinjung/app.html" role="button">關於我</a>
+                            <a class="btn btn-outline-light" href="/xinjung/index.html" role="button">首頁</a>
+                                 <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">APP 設計
+                                 </button>
+                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                     <li><a class="dropdown-item" href="/xinjung/app.html">APP 設計</a>
+                                     </li>  <li><hr class="dropdown-divider"></li>
+                                     <li><a class="dropdown-item" href="/xinjung/apppages/argame.html">搶救實驗室</a>
+                                     </li>  <li><hr class="dropdown-divider"></li>
+                                     <li><a class="dropdown-item" href="/xinjung/apppages/pmtree.html">PM TREE</a>
+                                     </li>  <li><hr class="dropdown-divider"></li>
+                                     <li><a class="dropdown-item" href="/xinjung/apppages/trash.html">TRASH+</a>
+                                     </li>
+                                 </ul>
+                            <a class="btn btn-outline-light" href="/xinjung/web.html" role="button">Web製作</a>
+                            <a class="btn btn-outline-light" href="/xinjung/about.html" role="button">關於我</a>
                         </div>
                     </ul>
                 </div>
@@ -107,7 +118,7 @@
                         </svg> 更多</a></ol>
             </div>
         </div>
-         <!--pm tree -->
+        <!--pm tree -->
         <h4 id="scrollspyHeading2" class="m-0 p-0"></h4>
         <div class="p-3 rounded" style="eight:auto">
             <div class="container p-3 rounded" style="background-color:rgba(255, 255, 255, 0.08)">
@@ -125,7 +136,10 @@
                                         <p class="card-text">透過Adobe XD製作</p>
                                     </div>
                                 </div>
-                                <a class="btn btn-outline-danger" href="/xinjung/apppages/pmtree.html" role="button">PM TREE</a>
+                                <a class="btn btn-outline-light" href="/xinjung/apppages/pmtree.html" role="button" style="background-color: rgb(31, 72, 90)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill text-white" viewBox="0 0 16 16">
+                                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                    </svg> PM TREE</a>
                             </div>
                         </div>
                         <div class="col"></div>
@@ -133,7 +147,7 @@
                 </div>
             </div>
         </div>
-        
+
         <h4 id="scrollspyHeading3" class="m-0"></h4>
         <div class="p-3 rounded" style="height:auto">
             <div class="container p-3 rounded" style="background-color:rgba(255, 255, 255, 0.08)">
@@ -141,7 +155,7 @@
                     <p class="h1 text-center">Web製作</p>
                     <div class="row row-cols-1 row-cols-md-3 m-0">
                         <!--WEB -->
-                         <div class="col"></div>
+                        <div class="col"></div>
                         <div class="col">
                             <div class="card ">
                                 <div class="card">
@@ -151,7 +165,11 @@
                                         <p class="card-text">透過WordPress製作</p>
                                     </div>
                                 </div>
-                                <a class="btn btn-outline-danger" href="/xinjung/web.html" role="button">微想實驗室</a>
+                                <a class="btn btn-outline-light" href="/xinjung/web.html" role="button" style="background-color: rgb(31, 72, 90)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill text-white" viewBox="0 0 16 16">
+                                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                    </svg>
+                                    微想實驗室</a>
                             </div>
                         </div>
                         <div class="col"></div>
@@ -162,7 +180,7 @@
     </div>
     <footer>
         <div id="footer"></div>
-       <!-- <footer class="bd-footer py-5 mt-5 bg-dark">
+        <!-- <footer class="bd-footer py-5 mt-5 bg-dark">
             <div class="container text-center">
                 <div class="">
                     <div class="col">
