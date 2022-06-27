@@ -3,7 +3,7 @@ document.getElementById("footer").innerHTML = `<footer class="bd-footer py-5 mt-
                 <div class="">
                     <div class="col">
                         <a class="d-inline-flex">
-                            <img src="/xinjung/img/logo.png" height="50px">
+                            <img src="https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/img/logo.png" height="50px">
                         </a>
                         <ul class="list-unstyled small text-muted">
                             <li class="mb-2 text-white">XinJung . 2022</li>
