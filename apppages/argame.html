@@ -25,114 +25,77 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar-example" style="background-color: rgb(31, 72, 90);">
     <div id="header"></div>
     <!--banner-->
-    <div class="card text-white">
-        <img src="/xinjung/img/bannerIn.jpg" alt="欣君的網站" width="auto" height="300px">
-        <div class="card-img-overlay">
-        </div>
-        <div class="card-img-overlay position-absolute" style="top: 100px">
-            <figure class="text-center">
-                <blockquote class="blockquote">
-                    <h1>搶救實驗室</h1>
-                </blockquote>
-                <figcaption>
-                    <cite title="Source Title" style="color: azure">APP 設計</cite>
-                </figcaption>
-            </figure>
-        </div>
+    <div class="card text-white text-center" style="background-color:rgba(18, 49, 51, 0.525)">
+        <img src="/xinjung/img/argame/argamebanner.png" class="rounded mx-auto d-block" alt="欣君的網站" width="100%" height="">
     </div>
-    <!-- scrollspy -->
-    <nav id="navbar-example2" class=" sticky-top navbar justify-content-center" style="background-color: rgba(0, 0, 0, 0.35)">
-        <ul class="nav nav-pills nav-fill">
-            <li class="nav-item ">
-                <a class="nav-link nav-item" href="#scrollspyHeading1">基本資料</a>
-                <!-- <a class="nav-link " href="#scrollspyHeading1">First</a> -->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading2">APP設計</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading3">Web製作</a>
-            </li>
-        </ul>
-    </nav>
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-        <h4 id="scrollspyHeading1" class="m-0"></h4>
-        <div class="p-3 rounded" style="background-color: rgba(255, 255, 255, 0);height:auto">
-            <div class="container p-3 rounded" style="background-color:rgba(255, 255, 255, 0.19)">
-                <div class="row">
-                    <div class="col">
-                        <img src="/xinjung/img/260983.jpg" class="img-fluid pt-4" alt="...">
-                    </div>
-                    <div class="text-white col rounded" style="background-color: rgba(255, 255, 255, 0)">
-                        <p class="h1  text-center pt-2">蔣欣君</p>
-                        <ul class="list-unstyled">
-                            <li>學歷</li>
-                            <ul>
-                                <li>國立臺北教育大學</li>
-                                <p class="fw-light">- 數位科技設計學系玩具與遊戲設計碩士班</p>
-                            </ul>
-                        </ul>
+    <!-- Content here -->
+    <br>
+    <div class="container">
+        <div class="text-center"><br>
+            <iframe width="80%" height="315" src="https://www.youtube-nocookie.com/embed/Ww2zgTa4O6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div><br>
+        <div class="text-white pr-5">
+            <ul class="list-unstyled">
+                <h4 class="text-center">
+                    <span class="badge" style="background-color:rgb(66, 180, 15)">搶救實驗室</span>
+                </h4>
+                <p>
+                    &emsp;&emsp;針對國小 5 年級自然科學實驗單元設計一套桌上遊戲教具「搶救實驗室」,共有 3個實驗單元,搭配有 3 種遊戲方式。每一單元的實驗遊戲有可單獨使用圖卡的傳統桌遊教學,也有搭配平板電腦可使用擴增實境(Augmented reality, AR) App(Application)的數位桌遊教學方式,可視教學設備與場域的適性使用。
+                </p>
+            </ul>
+        </div>
+        <div class="card text-center text-white"  style="background-color: rgba(0, 0, 0, 0.17);">
+            <div class="card-body">
+                <h5 class="card-title">工作內容</h5>
+                <span class="card-text">APP UI/UX</span><br>
+                <span class="badge bg-secondary">APP介面設計</span>
+                <span class="badge bg-secondary">APP UI</span>
+                <span class="badge bg-secondary">APP UX</span>
+                <span class="badge bg-secondary">3D美術</span>
+                <span class="badge bg-secondary">3D動畫</span>
+                <br><br>
+                <p class="card-title h5">使用工具</p>
+                <span class="badge" style="background-color:#55a1ed;">Adobe Photoshop</span>
+                <span class="badge" style="background-color:#eb9826;">Adobe Illustrator</span>
+                <span class="badge" style="background-color:#10a583;">Maya</span>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.thinkabitlab.RescueLab" class="btn text-white" style="background-color: rgb(66, 180, 15);" target="_blank">APP下載（Google Play）</a>
+            
+        </div>
+        <div class="row mt-5 m-0 text-white">
+            <p class="h1 text-center pt-2 pb-2" style="background-color: rgba(2, 36, 36, 0.27)">桌遊卡牌</p>
+            <div class="card col shadow p-3 mb-5 " style="width: 18rem;background-color: rgba(0, 0, 0, 0.1)">
+                <!-- Button trigger modal -->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="/xinjung/img/argame/argamecard.jpg" class="rounded mx-auto d-block" alt="欣君的網站" width="65%" height="">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content" style="background-color:rgba(0, 0, 0, 0.062)">
+                            <div class="modal">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/xinjung/img/argame/argamecard.jpg" class="rounded mx-auto d-block" alt="欣君的網站" width="100%" height="">
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-                <ol class="text-end m-0"><a class="btn btn-outline-light" href="" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                        </svg> 更多</a></ol>
+
             </div>
         </div>
-        <h4 id="scrollspyHeading2" class="m-0 p-0"></h4>
-        <div class="p-3 rounded" style="rgba(255, 255, 255, 0);height:auto">
-            <div class="container p-3 rounded" style="background-color:rgba(255, 255, 255, 0)">
-                <div class="row text-white">
-                    <p class="h1 text-center">APP設計</p>
-                    <div class="row row-cols-1 row-cols-md-3 g-4 m-0">
-                        <!--pm tree -->
-                        <div class="col"></div>
-                        <div class="col">
-                            <div class="card ">
-                                <div class="card">
-                                    <img src="/xinjung/img/imgapp/pmtree.png" class="card-img-top" alt="PM Tree">
-                                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.51)">
-                                        <h4 class="card-title text-center" style="background-color: rgba(255, 255, 255, 0.14)">PM TREE</h4>
-                                        <h5 class="card-title">APP Prototype</h5>
-                                        <p class="card-text">透過Adobe XD製作</p>
-                                    </div>
-                                </div>
-                                <a class="btn btn-outline-danger" href="/apppages/app.html" role="button">PM TREE</a>
-                            </div>
-                        </div>
-                        <div class="col"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h4 id="scrollspyHeading3" class="m-0"></h4>
-        <div class="p-3 rounded" style="rgba(255, 255, 255, 0);height:auto">
-            <div class="container p-3 rounded" style="background-color:rgba(255, 255, 255, 0)">
-                <div class="row text-white">
-                    <p class="h1 text-center">Web製作</p>
-                    <div class="row row-cols-1 row-cols-md-3 g-4 m-0">
-                        <!--pm tree -->
-                        <div class="col"></div>
-                        <div class="col">
-                            <div class="card ">
-                                <div class="card">
-                                    <img src="/xinjung/img/imgapp/pmtree.png" class="card-img-top" alt="PM Tree">
-                                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.51)">
-                                        <h4 class="card-title text-center" style="background-color: rgba(255, 255, 255, 0.14)">PM TREE</h4>
-                                        <h5 class="card-title">APP Prototype</h5>
-                                        <p class="card-text">透過Adobe XD製作</p>
-                                    </div>
-                                </div>
-                                <a class="btn btn-outline-danger" href="/apppages/app.html" role="button">PM TREE</a>
-                            </div>
-                        </div>
-                        <div class="col"></div>
-                    </div>
+        <div class="row  m-0 text-white">
+            <p class="h1 text-center pt-2 pb-2" style="background-color: rgba(2, 36, 36, 0.27)">製作團隊</p>
+            <div class="card col shadow p-3 mb-5 " style="width: 18rem;background-color: rgba(0, 0, 0, 0.1)">
+                <div class="modal-body">
+                    <img src="/xinjung/img/argame/argameabout.jpg" class="rounded mx-auto d-block" alt="欣君的網站" width="100%" height="">
                 </div>
             </div>
         </div>
     </div>
-    <br><br>
     <footer>
         <div id="footer"></div>
     </footer>
