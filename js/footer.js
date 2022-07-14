@@ -29,7 +29,7 @@ document.getElementById("footer").innerHTML = `<footer class="bd-footer py-5 mt-
                                 </td>
                             </tr>
                             <tr>
-                                <td class="mb-2"><a href="https://thinkabit.ntue.edu.tw/" class="text-decoration-none text-secondary" target="_blank">微想實驗室</a></td>
+                                <td class="mb-2"><a href="/xinjung/art.html" class="text-decoration-none text-secondary">美術設計</a></td>
                                 <td class="mb-2"><a href="/xinjung/apppages/trash.html" class="text-decoration-none text-secondary">Trash+</a></td>
                             </tr>
                             <tr>

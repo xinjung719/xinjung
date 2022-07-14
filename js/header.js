@@ -3,7 +3,7 @@ document.getElementById("header").innerHTML = `<nav class="navbar navbar-dark" s
             <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                 <span class="navbar-toggler-icon"></span>
             </a>
-            <a class="navbar-brand" href="/xinjung/index.html">
+            <a class="navbar-brand" href="#">
                 <img src="/xinjung/img/logo.png" alt="欣君的網站" width="70">
             </a>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-color: rgba(8, 63, 74, 0.67)">
@@ -30,6 +30,7 @@ document.getElementById("header").innerHTML = `<nav class="navbar navbar-dark" s
                                      </li>
                                  </ul>
                             <a class="btn btn-outline-light" href="/xinjung/web.html" role="button">Web製作</a>
+                            <a class="btn btn-outline-light" href="/xinjung/art.html" role="button">美術設計</a>
                             <a class="btn btn-outline-light" href="/xinjung/about.html" role="button">關於我</a>
                         </div>
                     </ul>
