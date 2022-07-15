@@ -8,7 +8,6 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>XinJung Web製作</title>
-    <link rel="icon" href="img/logo.png">
     <style>
         .nav-pills .nav-link.active,
         .nav-pills .show>.nav-link {
@@ -25,42 +24,68 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar-example" style="background-color: rgb(31, 72, 90);">
     <div id="header"></div>
     <!--banner-->
-    <div class="card text-white text-center" style="background-color:rgba(18, 49, 51, 0.525)">
-        <img src="/xinjung/img/thinkweb/thinkbanner.png" class="rounded mx-auto d-block" alt="欣君的網站" width="100%" height="">
+    <div class="card text-white">
+        <img src="/xinjung/img/bannerIn.jpg" alt="欣君的網站" width="auto" height="300px">
+        <div class="card-img-overlay">
+        </div>
+        <div class="card-img-overlay position-absolute" style="top: 100px">
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <h1>Web 製作</h1>
+                </blockquote>
+                <figcaption>
+                    <cite title="Source Title" style="color: azure">Web UI/UX、製作</cite>
+                </figcaption>
+            </figure>
+        </div>
     </div>
     <!-- Breadcrumb -->
     <nav class="container mt-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/xinjung/index.html" style="text-decoration:none;color: rgba(255, 255, 255, 0.56);">Home</a></li>
-            <li class="breadcrumb-item active text-white">Web製作</li>
+            <li class="breadcrumb-item active text-white">Web 製作</li>
         </ol>
     </nav>
-    <div class="container">
-        <br>
-        <div class="text-white pr-5">
-            <ul class="list-unstyled">
-                <h4 class="text-center">
-                    <span class="badge" style="background-color:rgb(43, 99, 188)">微想實驗室-官網</span>
-                </h4>
-                <p>&emsp;&emsp;微想實驗室成立於2016年，在林仁智教授與許一珍教授的帶領下，希望能打破以往台灣的僵化的教育模式，以想像力與創造力為核心，培育學生成為具備創新及跨領域能力之人才，以因應現今多變的市場及環境，提升國家整體競爭力。
-                    <br>
-                </p>
-            </ul>
-        </div>
-        <div class="card text-center text-white"  style="background-color: rgba(0, 0, 0, 0.17);">
-            <div class="card-body">
-                <h5 class="card-title">工作內容</h5>
-                <span class="card-text">Web製作</span><br>
-                <span class="badge bg-secondary">網站動線規劃</span>
-                <span class="badge bg-secondary">網站風格設定</span>
-                <span class="badge bg-secondary">網站製作</span>
-                <br><br>
-                <p class="card-title h5">使用工具</p>
-                <span class="badge" style="background-color:#8d8d8d;">WordPress</span>
+        <div class="container rounded" style="rgba(255, 255, 255, 0);height:auto">
+            <div class="rounded" style="background-color:rgba(255, 255, 255, 0)">
+                <div class="row text-white">
+                    <div class="row row-cols-1 row-cols-md-2 g-4 m-0">
+                        <!--pm tree -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card">
+                                    <img src="/xinjung/img/imgapp/think.png" class="card-img-top" alt="PM Tree">
+                                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.51)">
+                                        <h4 class="card-title text-center" style="background-color: rgba(255, 255, 255, 0.14)">微想實驗室 - 官網</h4>
+                                        <h5 class="card-title">透過 WordPress 製作</h5>
+                                    </div>
+                                </div>
+                                <a class="btn btn-outline-light" href="/xinjung/webpages/think.html" role="button" style="background-color: rgb(31, 72, 90)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill text-white" viewBox="0 0 16 16">
+                                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                    </svg> 微想實驗室 - 官網</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card ">
+                                <div class="card">
+                                    <img src="/xinjung/img/imgapp/medical.png" class="card-img-top" alt="PM Tree">
+                                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.51)">
+                                        <h4 class="card-title text-center" style="background-color: rgba(255, 255, 255, 0.14)">新加坡醫療診所預約服務系統</h4>
+                                        <h5 class="card-title">透過Bootstrap4製作</h5>
+                                        <p class="card-text">廠商 - 傳希科技</p>
+                                    </div>
+                                </div>
+                                <a class="btn btn-outline-light" href="/xinjung/webpages/medicalindex.html" role="button" style="background-color: rgb(31, 72, 90)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill text-white" viewBox="0 0 16 16">
+                                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                    </svg> 診所預約服務系統</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="https://thinkabit.ntue.edu.tw/" class="btn text-white" style="background-color: rgba(60, 185, 230, 0.69);" target="_blank">微想實驗室官網</a>
         </div>
-    </div>
     <footer>
         <div id="footer"></div>
     </footer>
