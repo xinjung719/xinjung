@@ -29,7 +29,18 @@ document.getElementById("header").innerHTML = `<nav class="navbar navbar-dark" s
                                      <li><a class="dropdown-item" href="/xinjung/apppages/trash.html">TRASH+</a>
                                      </li>
                                  </ul>
-                            <a class="btn btn-outline-light" href="/xinjung/web.html" role="button">Web製作</a>
+                            <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown">Web 製作
+                                 </button>
+                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                     <li><a class="dropdown-item" href="/xinjung/web.html">Web 製作</a>
+                                     </li>  
+                                     <li><hr class="dropdown-divider"></li>
+                                     <li><a class="dropdown-item" href="/xinjung/webpages/think.html">微想實驗室 - 官網</a>
+                                     </li>  
+                                     <li><hr class="dropdown-divider"></li>
+                                     <li><a class="dropdown-item" href="/xinjung/webpages/medicalindex.html">診所預約服務系統</a>
+                                     </li>  
+                                 </ul>
                             <a class="btn btn-outline-light" href="/xinjung/art.html" role="button">美術設計</a>
                             <a class="btn btn-outline-light" href="/xinjung/about.html" role="button">關於我</a>
                         </div>
