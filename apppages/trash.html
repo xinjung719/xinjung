@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>XinJung TRASH+</title>
-    <link rel="icon" href="img/logo.png">
+    <link rel="icon" href="https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/img/logo.png">
     <style>
         .nav-pills .nav-link.active,
         .nav-pills .show>.nav-link {
@@ -18,6 +18,19 @@
 
         .nav-link {
             color: rgba(255, 255, 255, 0.71);
+        }
+        .btnhover :hover{
+            border: 15px solid coral;
+             -webkit-animation: mymove 5s infinite;
+            animation: mymove 5s infinite;
+        }
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes mymove {
+            50% {border-color: lightblue;}
+        }
+        /* Standard syntax */
+        @keyframes mymove {
+            50% {border-color: lightblue;}
         }
     </style>
 </head>
@@ -38,11 +51,8 @@
     </nav>
     <!-- Content here -->
     <div class="container">
-        <div class="text-center"><br>
-         <!-- <iframe width="80%" height="315" src="https://www.youtube-nocookie.com/embed/Hfp4DC9QpnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-        </div>
         <div class="text-white pr-5">
-            <ul class="list-unstyled">
+            <ul class="list-unstyled mt-4">
                 <h4 class="text-center">
                     <span class="badge" style="background-color:rgb(255, 186, 0)">Trash+</span>
                 </h4>
@@ -66,21 +76,23 @@
             </div>
             <a href="https://www.figma.com/proto/uLwMnfb21eRyz71UjVJIbE/Trash%2B?node-id=610%3A4450&scaling=scale-down&page-id=0%3A1&starting-point-node-id=610%3A4691" class="btn text-white" style="background-color: rgba(60, 185, 230, 0.4);" target="_blank">GO Prototype</a>
         </div>
-        <div class="row mt-5 m-0 text-white">
-            <p class="h1 text-center pt-2 pb-2" style="background-color: rgba(2, 36, 36, 0.27)">Flow Chart </p>
-            <div class="card col shadow p-3 mb-5 " style="width: 18rem;background-color: rgba(0, 0, 0, 0.1)">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-5">
+        <div class="row m-0 text-white ">
+            <p class="h2 text-center pt-2 pb-2 " style="background-color: rgba(2, 36, 36, 0.27)">Flow Chart</p>
+            <div class="card col shadow p-3 mb-5 btn-outline-light" style="width: 18rem;background-color: rgba(0, 0, 0, 0.1)" >
                 <!-- Button trigger modal -->
-                <!-- Button trigger modal -->
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal1">
                     <img src="/xinjung/img/trash/trashFlowChart.png" class="rounded mx-auto d-block" alt="欣君的網站" width="65%" height="">
                 </button>
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content" style="background-color:rgba(0, 0, 0, 0.062)">
-                            <div class="modal">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
+                            <ul class="nav justify-content-end">
+                                 <li class="nav-item">
+                                     <div type="button" class="btn btn-outline-light" data-bs-dismiss="modal" >x</div>
+                                 </li>
+                            </ul>
                             <div class="modal-body">
                                 <img src="/xinjung/img/trash/trashFlowChart.png" class="rounded mx-auto d-block" alt="欣君的網站" width="100%" height="">
                             </div>
@@ -91,21 +103,22 @@
 
             </div>
         </div>
-        <div class="row  m-0 text-white">
-            <p class="h1 text-center pt-2 pb-2" style="background-color: rgba(2, 36, 36, 0.27)">Wireflow</p>
-            <div class="card col shadow p-3 mb-5 " style="width: 18rem;background-color: rgba(0, 0, 0, 0.1)">
-                <!-- Button trigger modal -->
+        <div class="row  m-0 text-white cardhover">
+            <p class="h2 text-center pt-2 pb-2 " style="background-color: rgba(2, 36, 36, 0.27)">Wireflow</p>
+            <div class="card col shadow p-3 mb-5 btn-outline-light" style="width: 18rem;background-color: rgba(0, 0, 0, 0.1)">
                 <!-- Button trigger modal -->
                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                     <img src="/xinjung/img/trash/trashWireflow.png" class="rounded mx-auto d-block" alt="欣君的網站" width="65%" height="">
                 </button>
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content" style="background-color:rgba(0, 0, 0, 0.062)">
-                            <div class="modal">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
+                            <ul class="nav justify-content-end">
+                                 <li class="nav-item">
+                                     <div type="button" class="btn btn-outline-light" data-bs-dismiss="modal" >x</div>
+                                 </li>
+                            </ul>
                             <div class="modal-body">
                                 <img src="/xinjung/img/trash/trashWireflow.png" class="rounded mx-auto d-block" alt="欣君的網站" width="100%" height="">
                             </div>
@@ -117,20 +130,21 @@
             </div>
         </div>
         <div class="row  m-0 text-white">
-            <p class="h1 text-center pt-2 pb-2" style="background-color: rgba(2, 36, 36, 0.27)">APP Mockup</p>
-            <div class="card col shadow p-3 mb-5 " style="width: 18rem;background-color: rgba(0, 0, 0, 0.1)">
-                <!-- Button trigger modal -->
+            <p class="h2 text-center pt-2 pb-2" style="background-color: rgba(2, 36, 36, 0.27)">APP Mockup</p>
+            <div class="card col shadow p-3 mb-5 btn-outline-light" style="width: 18rem;background-color: rgba(0, 0, 0, 0.1)">
                 <!-- Button trigger modal -->
                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                     <img src="/xinjung/img/trash/trashMockup.jpg" class="rounded mx-auto d-block" alt="欣君的網站" width="65%" height="">
                 </button>
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content" style="background-color:rgba(0, 0, 0, 0.062)">
-                            <div class="modal">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
+                            <ul class="nav justify-content-end">
+                                 <li class="nav-item">
+                                     <div type="button" class="btn btn-outline-light" data-bs-dismiss="modal">x</div>
+                                 </li>
+                            </ul>
                             <div class="modal-body">
                                 <img src="/xinjung/img/trash/trashMockup.jpg" class="rounded mx-auto d-block" alt="欣君的網站" width="100%" height="">
                             </div>
@@ -142,8 +156,8 @@
             </div>
         </div>
         <div class="row  m-0 text-white">
-            <p class="h1 text-center pt-2 pb-2" style="background-color: rgba(2, 36, 36, 0.27)">海報設計</p>
-            <div class="card col shadow p-3 mb-5 " style="width: 18rem;background-color: rgba(0, 0, 0, 0.1)">
+            <p class="h2 text-center pt-2 pb-2" style="background-color: rgba(2, 36, 36, 0.27)">海報設計</p>
+            <div class="card col shadow p-3 mb-5 btn-outline-light" style="width: 18rem;background-color: rgba(0, 0, 0, 0.1)">
                 <!-- Button trigger modal -->
                 <!-- Button trigger modal -->
                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4">
@@ -151,11 +165,13 @@
                 </button>
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content" style="background-color:rgba(0, 0, 0, 0.062)">
-                            <div class="modal">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
+                            <ul class="nav justify-content-end">
+                                 <li class="nav-item">
+                                     <div type="button" class="btn btn-outline-light" data-bs-dismiss="modal" >x</div>
+                                 </li>
+                            </ul>
                             <div class="modal-body">
                                 <img src="/xinjung/img/trash/trashpost.jpg" class="rounded mx-auto d-block" alt="欣君的網站" width="100%" height="">
                             </div>
@@ -166,6 +182,8 @@
 
             </div>
         </div>
+        </div>
+        
     </div>
     <footer>
         <div id="footer"></div>
