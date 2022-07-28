@@ -1,0 +1,28 @@
+.btnoutline{
+     background-color: rgba(255, 255, 255, 0);
+}
+.btnoutline:hover{
+    background-color: rgb(255, 255, 255);
+    border-width: inherit;
+}
+.btnoutline2{
+    background-color: rgba(255, 255, 255, 0);
+}
+.btnoutline2:hover{
+    background-color: rgba(154, 46, 58, 0.88);
+    border-width: inherit;
+}
+.btnoutline3{
+    background-color: rgba(255, 255, 255, 0);
+}
+.btnoutline3:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-width: inherit;
+}
+.btnoutline4{
+    background-color: rgba(255, 255, 255, 0);
+}
+.btnoutline4:hover{
+    background-color: rgba(0, 0, 0, 0.24);
+    border-width: inherit;
+}
