@@ -1,14 +1,17 @@
-document.getElementById("header").innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: rgba(177, 177, 177, 0.14)">
-        <div class="container-fluid">
+document.getElementById("header").innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(177, 177, 177, 0.14)">
+        <div class="container-md">
             <a class="navbar-brand" href="/xinjung/index.html">
-                <img src="/xinjung/img/logo.png" alt="欣君的網站" width="70">
+           <img src="/xinjung/img/logo.png" alt="欣君的網站" width="70">
+       </a>
+            <a class="navbar-toggler btn justify-content-end" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
             </a>
             <div class="collapse navbar-collapse nav justify-content-end">
-                <ul class="navbar-nav mb-2 mb-lg-0 ">
-                    <li class="nav-item">
+                <ul class="navbar-nav mb-2 mb-lg-0  gap-3">
+                    <li class="nav-item btn p-0">
                         <a class="nav-link active" aria-current="page" href="/xinjung/index.html" role="button">首頁</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown btn p-0">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             APP 設計
                         </a>
@@ -22,7 +25,7 @@ document.getElementById("header").innerHTML = `<nav class="navbar navbar-expand-
                             <li><a class="dropdown-item" href="/xinjung/apppages/trash.html">TRASH+</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown btn p-0">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Web 製作
                         </a>
@@ -35,17 +38,15 @@ document.getElementById("header").innerHTML = `<nav class="navbar navbar-expand-
                             <li><a class="dropdown-item" href="/xinjung/webpages/medicalindex.html">診所預約服務系統</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item btn p-0">
                         <a class="nav-link active" aria-current="page" href="/xinjung/art.html" role="button">美術設計</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item btn p-0">
                         <a class="nav-link active" aria-current="page" href="/xinjung/about.html" role="button">關於我</a>
                         </li>
                 </ul>
             </div>
-            <a class="navbar-toggler btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                <span class="navbar-toggler-icon"></span>
-            </a>
+            
         </div>
     </nav>
     <nav class="navbar p-0">
@@ -90,4 +91,5 @@ document.getElementById("header").innerHTML = `<nav class="navbar navbar-expand-
                     </ul>
                 </div>
             </div>
-    </nav>`;
+    </nav>
+    `;
