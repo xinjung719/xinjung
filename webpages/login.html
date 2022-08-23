@@ -18,13 +18,60 @@
             background-color: rgba(226, 206, 59, 0.7);
             border-color: #ffffff;
         }
+       
+        .an1{
+            animation: dong 2s infinite;
+        }
+        .an2{
+            animation: dong2 2s infinite;
+        }
+        @keyframes dong { 
+            0% {
+                transform: translate(0px, 0px);
+            }
+            50% {
+                transform: translate(0px, -10px);
+            }
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+        @keyframes dong2 { 
+            0% {
+                transform: translate(0px, -10px);
+            }
+            50% {
+                transform: translate(0px, 0px);
+            }
+            100% {
+                transform: translate(0px, -10px);
+            }
+        }
     </style>
 </head>
 
 <body style="background-image: url(/xinjung/img/login/bg2.jpg);background-repeat:no-repeat;background-attachment: fixed;">
    <div id="header"></div>
     <!--banner-->
-    <img src="/xinjung/img/login/banner.png" class="img-fluid shadow-lg" alt="...">
+    <div class="card bg-dark text-white">
+        <img src="/xinjung/img/login/banner.png" class="card-img" alt="...">
+        <div class="card-img-overlay">
+           <div class="row row-cols-3 g-4 justify-content-center" style="margin-top:26%!important;">
+               <div class="col-3 an1">
+                   <img src="/xinjung/img/login/banner1.png" alt="..." width="100%">
+               </div>
+                <div class="col-3 an2">
+                   <img src="/xinjung/img/login/banner2.png" class="" alt="..." width="100%">
+               </div>
+                <div class="col-3 an1">
+                   <img src="/xinjung/img/login/banner3.png" class="" alt="..." width="100%">
+               </div>
+               
+            </div>
+        </div>
+    </div>
+   
+    
         <div class="container rounded" style="rgba(255, 255, 255, 0);height:auto">
             <div class="card text-center mt-5" style="background-color: rgba(250, 235, 215, 0.21)">
                 <div class="card-header text-white h3 m-2" style="background-color: rgba(59, 16, 3, 0.62)">
@@ -58,7 +105,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card text-center mt-5 text-white p-2" style="background-color: rgba(250, 235, 215, 0.21)">
+            <div class="fix-end card text-center mt-5 text-white p-2" style="background-color: rgba(250, 235, 215, 0.21)">
                 <div class="row row-cols-3 m-2 justify-content-center">
                 <label class="form-check-label col-12" for="defaultCheck1">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> 
