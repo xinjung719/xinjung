@@ -36,6 +36,7 @@ document.getElementById("header").innerHTML = `<nav class="navbar navbar-expand-
                             </li>
                             <li><a class="dropdown-item" href="/xinjung/webpages/think.html">微想實驗室 - 官網</a></li>
                             <li><a class="dropdown-item" href="/xinjung/webpages/medicalindex.html">診所預約服務系統</a></li>
+                            <li><a class="dropdown-item" href="/xinjung/webpages/login.html">Game-事前預約</a></li>
                         </ul>
                     </li>
                     <li class="nav-item btn p-0">
@@ -83,7 +84,10 @@ document.getElementById("header").innerHTML = `<nav class="navbar navbar-expand-
                                      </li>  
                                      <li><hr class="dropdown-divider"></li>
                                      <li><a class="dropdown-item" href="/xinjung/webpages/medicalindex.html">診所預約服務系統</a>
-                                     </li>  
+                                     </li>
+                                     <li><hr class="dropdown-divider"></li>
+                                     <li><a class="dropdown-item" href="/xinjung/webpages/login.html">Game-事前預約</a>
+                                     </li> 
                                  </ul>
                             <a class="btn btn-outline-light" href="/xinjung/art.html" role="button">美術設計</a>
                             <a class="btn btn-outline-light" href="/xinjung/about.html" role="button">關於我</a>
@@ -91,5 +95,4 @@ document.getElementById("header").innerHTML = `<nav class="navbar navbar-expand-
                     </ul>
                 </div>
             </div>
-    </nav>
-    `;
+    </nav>`;
