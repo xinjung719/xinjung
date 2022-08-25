@@ -28,7 +28,7 @@ document.getElementById("footer").innerHTML = `<footer class="bd-footer py-5 mt-
                                 </li>
                                 <li class="mb-2"><a href="/xinjung/webpages/medicalindex.html" class="text-decoration-none text-secondary">診所預約服務系統</a>
                                 </li>
-                                <li class="mb-2"><a href="/xinjung/webpages/medicalindex.html" class="text-decoration-none text-secondary">Game-事前預約</a>
+                                <li class="mb-2"><a href="/xinjung/webpages/login.html" class="text-decoration-none text-secondary">Game-事前預約</a>
                                 </li>
                             </div>
                             <div class="col">
