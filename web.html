@@ -23,19 +23,26 @@
         .nav-link {
             color: rgba(255, 255, 255, 0.71);
         }
+
         .btn-outline-light:hover {
             color: rgb(31, 72, 90);
             background-color: rgb(255, 255, 255);
             border-color: rgba(97, 145, 163, 0);
         }
-       
+
+        .breadcrumb-item+.breadcrumb-item::before {
+            float: left;
+            padding-right: 0.5rem;
+            color: #ffffff;
+            content: var(--bs-breadcrumb-divider, "/");
+        }
     </style>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar-example" style="background-color: #649eff;">
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" style="background-color: #ff56b1;">
     <div id="header" style="background-color: #000000"></div>
     <!--banner1-->
-<!--
+    <!--
     <div class="card text-white">
         <img src="/xinjung/img/bannerIn.jpg" alt="欣君的網站" width="auto" height="300px">
         <div class="card-img-overlay">
@@ -57,67 +64,67 @@
         <img src="img/web/webn.png" style="position: absolute;top:30px;left:50%;transform: translateX(-50%);width:65%;">
     </div>
     <!-- Breadcrumb -->
-    <nav class="container mt-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <nav class="container mt-3 text-white" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/xinjung/index.html" style="text-decoration:none;color: rgba(0, 0, 0, 0.56);">首頁</a></li>
-            <li class="breadcrumb-item active text-dark">Web 製作</li>
+            <li class="breadcrumb-item"><a href="/xinjung/index.html" style="text-decoration:none;color: rgba(255, 255, 255, 0.56);">首頁</a></li>
+            <li class="breadcrumb-item active text-white">Web 製作</li>
         </ol>
     </nav>
-        <div class="container rounded" style="rgba(255, 255, 255, 0);height:auto">
-            <div class="rounded" style="background-color:rgba(255, 255, 255, 0)">
-                <div class="row text-white">
-                    <div class="row row-cols-1 row-cols-md-3 g-4 m-0">
-                        <!--pm tree -->
-                        <div class="col" data-aos="zoom-in-up">
-                            <div class="card" style="background-color: rgba(255, 255, 255, 0)">
-                                <div class="card">
-                                    <img src="/xinjung/img/imgapp/think.png" class="card-img-top" alt="PM Tree">
-                                    <div class="card-img-overlay cardhover"  style="background-color: rgba(0, 0, 0, 0.51)">
-                                        <h4 class="card-title text-center" style="background-color: rgba(255, 255, 255, 0.14)">微想實驗室 - 官網</h4>
-                                        <h5 class="card-title">透過 WordPress 製作</h5>
-                                    </div>
+    <div class="container rounded" style="rgba(255, 255, 255, 0);height:auto">
+        <div class="rounded" style="background-color:rgba(255, 255, 255, 0)">
+            <div class="row text-white">
+                <div class="row row-cols-1 row-cols-md-3 g-4 m-0">
+                    <!--pm tree -->
+                    <div class="col" data-aos="zoom-in-up">
+                        <div class="card" style="background-color: rgba(255, 255, 255, 0)">
+                            <div class="card">
+                                <img src="/xinjung/img/imgapp/think.png" class="card-img-top" alt="PM Tree">
+                                <div class="card-img-overlay cardhover" style="background-color: rgba(0, 0, 0, 0.51)">
+                                    <h4 class="card-title text-center" style="background-color: rgba(255, 255, 255, 0.14)">微想實驗室 - 官網</h4>
+                                    <h5 class="card-title">透過 WordPress 製作</h5>
                                 </div>
-                                <a class="btn btn-outline-light stretched-link" href="/xinjung/webpages/think.html" role="button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill text-white" viewBox="0 0 16 16">
-                                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                                    </svg> 微想實驗室 - 官網</a>
                             </div>
+                            <a class="btn btn-outline-light stretched-link" href="/xinjung/webpages/think.html" role="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill text-white" viewBox="0 0 16 16">
+                                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                </svg> 微想實驗室 - 官網</a>
                         </div>
-                        <div class="col" data-aos="zoom-in-up">
-                            <div class="card" style="background-color: rgba(255, 255, 255, 0)">
-                                <div class="card">
-                                    <img src="/xinjung/img/imgapp/medical.png" class="card-img-top" alt="PM Tree">
-                                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.51)">
-                                        <h4 class="card-title text-center" style="background-color: rgba(255, 255, 255, 0.14)">新加坡醫療診所預約服務系統</h4>
-                                        <h5 class="card-title">透過Bootstrap4製作</h5>
-                                        <p class="card-text">廠商 - 傳希科技</p>
-                                    </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in-up">
+                        <div class="card" style="background-color: rgba(255, 255, 255, 0)">
+                            <div class="card">
+                                <img src="/xinjung/img/imgapp/medical.png" class="card-img-top" alt="PM Tree">
+                                <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.51)">
+                                    <h4 class="card-title text-center" style="background-color: rgba(255, 255, 255, 0.14)">新加坡醫療診所預約服務系統</h4>
+                                    <h5 class="card-title">透過Bootstrap4製作</h5>
+                                    <p class="card-text">廠商 - 傳希科技</p>
                                 </div>
-                                <a class="btn btn-outline-light stretched-link" href="/xinjung/webpages/medicalindex.html" role="button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill text-white" viewBox="0 0 16 16">
-                                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                                    </svg> 診所預約服務系統</a>
                             </div>
+                            <a class="btn btn-outline-light stretched-link" href="/xinjung/webpages/medicalindex.html" role="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill text-white" viewBox="0 0 16 16">
+                                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                </svg> 診所預約服務系統</a>
                         </div>
-                        <div class="col" data-aos="zoom-in-up">
-                            <div class="card" style="background-color: rgba(255, 255, 255, 0)">
-                                <div class="card">
-                                    <img src="/xinjung/img/imgapp/login.png" class="card-img-top" alt="PM Tree">
-                                    <div class="card-img-overlay cardhover"  style="background-color: rgba(0, 0, 0, 0.51)">
-                                        <h4 class="card-title text-center" style="background-color: rgba(255, 255, 255, 0.14)">遊戲事前預約-頁面</h4>
-                                        <h5 class="card-title">透過 Bootstrap5 製作</h5>
-                                    </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in-up">
+                        <div class="card" style="background-color: rgba(255, 255, 255, 0)">
+                            <div class="card">
+                                <img src="/xinjung/img/imgapp/login.png" class="card-img-top" alt="PM Tree">
+                                <div class="card-img-overlay cardhover" style="background-color: rgba(0, 0, 0, 0.51)">
+                                    <h4 class="card-title text-center" style="background-color: rgba(255, 255, 255, 0.14)">遊戲事前預約-頁面</h4>
+                                    <h5 class="card-title">透過 Bootstrap5 製作</h5>
                                 </div>
-                                <a class="btn btn-outline-light stretched-link" href="/xinjung/webpages/login.html" role="button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill text-white" viewBox="0 0 16 16">
-                                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                                    </svg>遊戲事前預約</a>
                             </div>
+                            <a class="btn btn-outline-light stretched-link" href="/xinjung/webpages/login.html" role="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill text-white" viewBox="0 0 16 16">
+                                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                </svg>遊戲事前預約</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     <footer>
         <div id="footer"></div>
     </footer>
@@ -126,7 +133,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="/xinjung/js/header.js"></script>
     <script src="/xinjung/js/footer.js"></script>
-     <!--AOS-->
+    <!--AOS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
