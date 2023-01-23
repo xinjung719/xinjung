@@ -20,7 +20,42 @@
             background-color: rgb(255, 255, 255);
             border-color: rgba(97, 145, 163, 0);
         }
-
+        .appimg{
+            position: absolute;
+            top: 30%;
+            left:50%;
+            transform: translateX(-50%);
+            width:80%;
+            animation-name: appinAn;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes appinAn{
+            0%{
+                filter: brightness(100%)
+            }
+            80%{
+                filter: brightness(100%)
+            }
+            85%{
+                filter: brightness(110%)
+            }
+            90%{
+                filter: brightness(100%)
+            }
+            91%{
+                filter: brightness(100%)
+            }
+            95%{
+                filter: brightness(110%)
+            }
+            98%{
+                filter: brightness(100%)
+            }
+            100%{
+                filter: brightness(100%)
+            }
+        }
     </style>
 </head>
 
@@ -46,7 +81,7 @@
 -->
     <div style="position: relative;">
         <img src="img/app/appbn.png" class="w-100">
-        <img src="img/app/appbnIn.png" style="position: absolute;top: 30%;left:50%;transform: translateX(-50%);width:80%">
+        <img src="img/app/appbnIn.png" class="appimg">
     </div>
     <!-- Breadcrumb -->
     <nav class="container mt-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
