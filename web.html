@@ -36,6 +36,40 @@
             color: #ffffff;
             content: var(--bs-breadcrumb-divider, "/");
         }
+        .bgIn{
+            position: absolute;
+            top:30px;
+            left:50%;
+            transform:translateX(-50%);
+            width:65%;
+            animation-name: bglight;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bglight{
+            0%{
+                filter: brightness(100%);
+            }
+           80%{
+                filter: brightness(100%);
+            }
+            85%{
+                filter: brightness(120%);
+            }
+            89%{
+                filter: brightness(100%);
+            }
+            90%{
+                filter: brightness(120%);
+            }
+            95%{
+                filter: brightness(100%);
+            }
+            100%{
+                filter: brightness(100%);
+            }
+        }
     </style>
 </head>
 
@@ -61,7 +95,7 @@
 -->
     <div style="position: relative;">
         <img src="img/web/webBg.jpg" class="w-100">
-        <img src="img/web/webn.png" style="position: absolute;top:30px;left:50%;transform: translateX(-50%);width:65%;">
+        <img src="img/web/webn.png" class="bgIn">
     </div>
     <!-- Breadcrumb -->
     <nav class="container mt-3 text-white" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
