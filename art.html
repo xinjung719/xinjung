@@ -15,16 +15,72 @@
     <link href="/xinjung/css/HoverCss.css" rel="stylesheet">
     <link rel="icon" href="https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/img/logo.png">
     <style>
+        
+        body{
+            background-color:#4a22a5;
+            background-image: url(https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/img/art/art.png);
+            background-size: contain;
+            background-repeat: repeat-y;
+        }
         .nobg{
             background-color: rgba(255, 255, 255, 0);
             border-color: rgba(255, 255, 255, 0);
         }
+        
+        .artimg{
+            position: absolute;
+            top: 30%;
+            left:50%;
+            transform: translateX(-50%);
+            width:80%;
+            animation-name: artinAn;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes artinAn{
+            0%{
+                top: 30%;
+                filter: brightness(100%);
+            }
+            50%{
+                top: 32%;
+                filter: brightness(100%);
+            }
+            83%{
+                
+                filter: brightness(100%);
+            }
+            85%{
+                
+                filter: brightness(110%);
+            }
+            90%{
+                
+                filter: brightness(100%);
+            }
+            95%{
+                
+                filter: brightness(100%);
+            }
+            97%{
+                
+                filter: brightness(110%);
+            }
+            98%{
+                
+                filter: brightness(100%);
+            }
+            100%{
+                top: 30%;
+            }
+        }
     </style>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar-example"  data-bs-offset="190" style="background-color: rgb(31, 72, 90);">
+<body data-bs-spy="scroll" data-bs-target="#navbar-example"  data-bs-offset="190" >
     <div id="header"></div>
     <!--banner-->
+<!--
     <div class="card text-white">
         <img src="https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/img/bannerIn.jpg" alt="欣君的網站" width="auto" height="300px">
         <div class="card-img-overlay">
@@ -39,6 +95,11 @@
                 </figcaption>
             </figure>
         </div>
+    </div>
+-->
+    <div style="position: relative;">
+        <img src="https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/img/art/artBg.png" class="w-100">
+        <img src="https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/img/art/artbn.png" class="artimg">
     </div>
     <!-- scrollspy -->
     <div class="overflow-auto"></div>

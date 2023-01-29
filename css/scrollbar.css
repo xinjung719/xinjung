@@ -1,25 +1,25 @@
 /* 整個捲軸 */
 ::-webkit-scrollbar {
-    width: auto;
+    width:  2px;
 }
 
 /* 捲軸的軌道 */
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    background: rgb(42, 84, 103);
+    background: rgb(0, 0, 0);
 }
 
 /*捲軸尚未滑到的軌道*/
 ::-webkit-scrollbar-track-piece {
-    background: rgb(42, 84, 103);
+    background: rgb(0, 0, 0);
 }
 
 /* 滑動的區塊 */
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 /* 滑鼠移到滑動的區塊上 */
