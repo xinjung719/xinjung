@@ -66,13 +66,18 @@ body {
 }
 
 .menu_burger svg {
+    width: 20px;
     fill: #424242;
 }
 
-.menu_burger:hover svg {
-    fill: #f68c9f;
+.menu_burger svg rect {
+    fill: #424242;
 }
 
+.menu_burger:hover svg path,
+.menu_burger:hover svg rect {
+    fill: #f68c9f;
+}
 @media(max-width:768px) {
 
     .nav_main,
@@ -96,7 +101,7 @@ body {
     }
 
     .logo_img {
-        padding-left: 16px;
+        padding-left: 20px;
         margin: 0 auto;
     }
 
@@ -140,7 +145,7 @@ body {
     text-align: center;
 }
 
-.banner img{
+.banner img {
     width: 100%;
     max-width: 500px;
 }
