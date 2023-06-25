@@ -14,35 +14,35 @@ document.getElementById("footer").innerHTML = `<footer class="bd-footer py-5 mt-
                         <div class="row row-cols-1 row-cols-md-3 justify-content-center">
                             <div class="col">
                                 <li class="mb-2 fw-bold">
-                                    <a href="/xinjung/index.html" class="text-decoration-none text-secondary ">首頁</a>
+                                    <a href="https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/web/index.html" class="text-decoration-none text-secondary ">首頁</a>
                                 </li>
-                                <li class="mb-2 fw-bold"><a href="/xinjung/about.html" class="text-decoration-none text-secondary">關於我</a></li>
-                                 <li class="mb-2"><a href="/xinjung/art.html" class="text-decoration-none text-secondary">美術設計</a>
-                                </li>
-                            </div>
-                            <div class="col">
-                                <li class="mb-2 fw-bold">
-                                    <a href="/xinjung/web.html" class="text-decoration-none text-secondary">Web製作</a>
-                                </li>
-                                <li class="mb-2"><a href="/xinjung/webpages/think.html" class="text-decoration-none text-secondary">微想實驗室-官網</a>
-                                </li>
-                                <li class="mb-2"><a href="/xinjung/webpages/medicalindex.html" class="text-decoration-none text-secondary">診所預約服務系統</a>
-                                </li>
-                                <li class="mb-2"><a href="/xinjung/webpages/login.html" class="text-decoration-none text-secondary">Game-事前預約</a>
+                                <li class="mb-2 fw-bold"><a href="https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/web/about.html" class="text-decoration-none text-secondary">關於我</a></li>
+                                 <li class="mb-2"><a href="https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/web/art.html" class="text-decoration-none text-secondary">美術設計</a>
                                 </li>
                             </div>
                             <div class="col">
                                 <li class="mb-2 fw-bold">
-                                    <a href="/xinjung/app.html" class="text-decoration-none text-secondary">APP設計</a>
+                                    <a href="https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/web/web.html" class="text-decoration-none text-secondary">Web製作</a>
+                                </li>
+                                <li class="mb-2"><a href="https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/web/webpages/think.html" class="text-decoration-none text-secondary">微想實驗室-官網</a>
+                                </li>
+                                <li class="mb-2"><a href="https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/web/webpages/medicalindex.html" class="text-decoration-none text-secondary">診所預約服務系統</a>
+                                </li>
+                                <li class="mb-2"><a href="https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/web/webpages/login.html" class="text-decoration-none text-secondary">Game-事前預約</a>
+                                </li>
+                            </div>
+                            <div class="col">
+                                <li class="mb-2 fw-bold">
+                                    <a href="https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/web/app.html" class="text-decoration-none text-secondary">APP設計</a>
                                 </li>
 
                                 <li class="mb-2">
-                                    <a href="/xinjung/apppages/pmtree.html" class="text-decoration-none text-secondary">PM Tree</a>
+                                    <a href="https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/web/apppages/pmtree.html" class="text-decoration-none text-secondary">PM Tree</a>
                                 </li>
 
-                                <li class="mb-2"><a href="/xinjung/apppages/trash.html" class="text-decoration-none text-secondary">Trash+</a></li>
+                                <li class="mb-2"><a href="https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/web/apppages/trash.html" class="text-decoration-none text-secondary">Trash+</a></li>
 
-                                <li class="mb-2"><a href="/xinjung/apppages/argame.html" class="text-decoration-none text-secondary">搶救實驗室</a>
+                                <li class="mb-2"><a href="https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/web/apppages/argame.html" class="text-decoration-none text-secondary">搶救實驗室</a>
                                 </li>
 
                             </div>
