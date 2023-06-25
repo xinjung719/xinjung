@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css.css" rel="stylesheet">
+</head>
+
+<!-- <body onresize="myFunction()"> -->
+
+<body>
+    <div class="nav_main">
+        <div class="logo">
+            <img src="./img/logo.png" class="logo_img">
+            <div class="menu_burger">
+                < <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+            </div>
+        </div>
+        <ul class="nav_main_menu">
+            <li>首頁</li>
+            <li>網頁設計</li>
+            <li>App設計</li>
+            <li>平面設計</li>
+            <li>美術圖</li>
+            <li>關於我</li>
+        </ul>
+    </div>
+
+    <div class="contain">
+        <div class="banner">
+            <img src="./img/homeBanner.png">
+        </div>
+    </div>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <!-- 選單開啟關閉 -->
+    <script>
+        $(document).ready(function () {
+            $(".menu_burger").click(function () {
+                $(".nav_main_menu").slideToggle();
+
+            });
+        });
+    </script>
+    <!-- 抓取視窗大小 -->
+    <script>
+        function reportWindowSize() {
+            if (window.innerWidth > 768) {
+                var menustyle = document.querySelector(`.nav_main_menu`);
+                menustyle.style = `display: flex;list-style: none;gap: 1px 40px;flex-wrap: wrap;`
+            }
+            else if (window.innerWidth <= 768) {
+                var menustyle = document.querySelector(`.nav_main_menu`);
+                menustyle.style = `padding: 0;text-align: center;width: 100%;display:none;`
+            }
+        }
+        window.onresize = reportWindowSize;
+    </script>
+</body>
+
+</html>
