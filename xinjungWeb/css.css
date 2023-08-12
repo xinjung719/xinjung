@@ -21,7 +21,9 @@ body {
 .logo {
     width: auto;
 }
-
+.logo img{
+    margin-top:1px;
+}
 .logo_img {
     width: 100%;
     max-width: 70px;
@@ -42,21 +44,22 @@ body {
     flex-wrap: wrap;
 }
 
-.logo,
-.nav_main_menu {
-    cursor: pointer;
+.logo img,
+.nav_main_menu li{
+    cursor: pointer; 
+    -webkit-tap-highlight-color: transparent;
 }
-
-.nav_main_menu li {
+.nav_main_menu li a{
     color: #464646;
     padding: 0px 0 5px;
     border-style: solid;
     border-width: 0 0 1.5px 0;
     border-color: transparent;
     transition: 0.3s;
+    text-decoration: none;
 }
 
-.nav_main_menu li:hover {
+.nav_main_menu li a:hover {
     color: #f68c9f;
     border-color: #f68c9f;
 }
@@ -127,7 +130,13 @@ body {
     .nav_main_menu li {
         padding: 5px 0 5px;
     }
-
+    .nav_main_menu li a{
+        display:block;
+    }
+    .nav_main_menu li a:hover {
+        color: #000000;
+        border-color:transparent;
+    }
     .nav_main_menu li:hover {
         color: #464646;
         background-color: #f8d3e6;
