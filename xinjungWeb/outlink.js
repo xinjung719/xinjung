@@ -1,5 +1,5 @@
 //nav link
-$('.outlinkNav').load("./nav.html");
+$('.outlinkNav').load("https://raw.githubusercontent.com/xinjung719/xinjung/gh-pages/xinjungWeb/nav.html");
 
 //選單開啟關閉
 $(document).ready(function () {
