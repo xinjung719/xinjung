@@ -1,0 +1,138 @@
+/* 選單 */
+.nav_main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+    box-shadow: 1px 1px 5px 0px #cccccc61;
+}
+
+.logo {
+    width: auto;
+}
+.logo img{
+    margin-top:1px;
+}
+.logo_img {
+    width: 100%;
+    max-width: 70px;
+}
+
+.nav_main_menu {
+    display: flex;
+    list-style: none;
+    gap: 1px 40px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.nav_main_menu_win {
+    display: flex;
+    list-style: none;
+    gap: 1px 12px;
+    flex-wrap: wrap;
+}
+
+.logo img,
+.nav_main_menu li{
+    cursor: pointer; 
+    -webkit-tap-highlight-color: transparent;
+}
+.nav_main_menu li a{
+    color: #464646;
+    padding: 0px 0 5px;
+    border-style: solid;
+    border-width: 0 0 1.5px 0;
+    border-color: transparent;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.nav_main_menu li a:hover {
+    color: #f68c9f;
+    border-color: #f68c9f;
+}
+
+.menu_burger {
+    display: none;
+}
+
+.menu_burger svg {
+    width: 20px;
+    fill: #424242;
+}
+
+.menu_burger svg rect {
+    fill: #424242;
+}
+
+.menu_burger:hover svg path,
+.menu_burger:hover svg rect {
+    fill: #f68c9f;
+}
+@media(max-width:768px) {
+
+    .nav_main,
+    .nav_main_menu {
+        flex-direction: column;
+    }
+
+    .nav_main {
+        justify-content: left;
+    }
+
+    .logo {
+        width: 100%;
+        border-style: solid;
+        text-align: center;
+        border-width: 0 0 1.5px 0;
+        border-color: #cccccc61;
+        padding: 6px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo_img {
+        padding-left: 20px;
+        margin: 0 auto;
+    }
+
+    .menu_burger {
+        display: block;
+        position: relative;
+    }
+
+    .nav_main_menu {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .nav_main_menu_win768 {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .nav_main_menu li {
+        padding: 5px 0 5px;
+    }
+    .nav_main_menu li a{
+        display:block;
+    }
+    .nav_main_menu li a:hover {
+        color: #000000;
+        border-color:transparent;
+    }
+    .nav_main_menu li:hover {
+        color: #464646;
+        background-color: #f8d3e6;
+        border-color: #ffc6d000;
+    }
+}
+
+/* 選單end */
