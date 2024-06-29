@@ -19,7 +19,6 @@
         body {
             overflow-y: scroll;
             scroll-snap-type: y mandatory;
-            /* -webkit-overflow-scrolling: touch; */
         }
 
         .section {
@@ -32,7 +31,6 @@
             scroll-snap-align: start;
             height: 100vh;
             overflow: auto;
-            /* -webkit-overflow-scrolling: touch; */
         }
 
         #section1 {
@@ -99,31 +97,20 @@
         <h1>Section 2</h1>
     </div>
     <div class="section" id="section3">
-        <h1>乾乾0e0 0e 0e00 0e0 </h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
-        <h1>Section 3</h1>
+        <h1>乾rrr</h1>
+        <h1>乾rrr</h1>
+        <h1>乾rrr</h1>
+        <h1>乾rrr</h1>
+        <h1>乾rrr</h1>
+        <h1>乾rrr</h1>
+        <h1>乾rrr</h1>
+        <h1>乾rrr</h1>
+        <h1>乾rrr</h1>
+        <h1>乾rrr</h1>
+        <h1>乾rrr</h1>
+        <h1>乾rrr</h1>
+        <h1>乾rrr</h1>
+        <h1>乾rrr</h1>
     </div>
     <div class="section" id="section4">
         <h1>Section 4</h1>
@@ -198,6 +185,8 @@
                         if (index + 1 < sections.length) {
                             sections[index + 1].scrollIntoView({ behavior: 'smooth' });
                         }
+                    } else if (section.scrollTop === 0 && index > 0) {
+                        sections[index - 1].scrollIntoView({ behavior: 'smooth' });
                     }
                 });
             });
@@ -206,4 +195,4 @@
 </body>
 
 </html>
-<!-- 202406290100 20240629010000-->
+<!-- 20240606060 -->
