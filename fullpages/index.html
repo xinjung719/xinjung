@@ -22,15 +22,16 @@
         }
 
         .section {
-            height: 100vh;
             width: 100%;
-            /* display: flex; */
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             font-size: 3em;
             color: white;
             scroll-snap-align: start;
+            height: 100vh;
+            /* 確保每個 section 都占滿整個視窗高度 */
             overflow: auto;
         }
 
@@ -76,16 +77,19 @@
 <body>
     <div id="nav-indicators"></div>
     <div class="section" id="section1">
-        <h1>Section 123</h1>
-        <h1>Section 1</h1>
-        <h1>Section 1</h1>
-        <h1>Section 1</h1>
-        <h1>Section 1</h1>
-        <h1>Section 1</h1>
-        <h1>Section 1</h1>
         <h1>Section 1</h1>
     </div>
     <div class="section" id="section2">
+        <h1>Section 2</h1>
+        <h1>Section 2</h1>
+        <h1>Section 2</h1>
+        <h1>Section 2</h1>
+        <h1>Section 2</h1>
+        <h1>Section 2</h1>
+        <h1>Section 2</h1>
+        <h1>Section 2</h1>
+        <h1>Section 2</h1>
+        <h1>Section 2</h1>
         <h1>Section 2</h1>
         <h1>Section 2</h1>
         <h1>Section 2</h1>
@@ -106,44 +110,56 @@
         document.addEventListener('DOMContentLoaded', function () {
             const sections = document.querySelectorAll('.section');
             const navIndicators = document.getElementById('nav-indicators');
+            const indicators = [];
 
+            // 創建指示點並設置點擊事件
             sections.forEach((section, index) => {
                 const indicator = document.createElement('div');
                 indicator.classList.add('indicator');
                 if (index === 0) {
                     indicator.classList.add('active');
                 }
-                navIndicators.appendChild(indicator);
-
-                section.addEventListener('mouseenter', () => {
+                indicator.addEventListener('click', () => {
+                    // 移除所有指示點的 active 類
+                    indicators.forEach(ind => ind.classList.remove('active'));
+                    // 將點擊的指示點添加 active 類
                     indicator.classList.add('active');
+                    // 滾動到相應的部分
+                    section.scrollIntoView({ behavior: 'smooth' });
                 });
-
-                section.addEventListener('mouseleave', () => {
-                    indicator.classList.remove('active');
-                });
+                indicators.push(indicator);
+                navIndicators.appendChild(indicator);
             });
 
-            window.addEventListener('scroll', () => {
-                let current = '';
-                sections.forEach((section) => {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
-                    if (pageYOffset >= sectionTop - sectionHeight / 3) {
-                        current = section.getAttribute('id');
-                    }
-                });
+            // 使用 IntersectionObserver 來監聽 section 進入和離開視窗
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5 // 50% 可見度閾值
+            };
 
-                document.querySelectorAll('.indicator').forEach((indicator) => {
-                    indicator.classList.remove('active');
-                    if (indicator.classList.contains(current)) {
-                        indicator.classList.add('active');
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const index = Array.from(sections).indexOf(entry.target);
+                        indicators.forEach((indicator, i) => {
+                            if (i === index) {
+                                indicator.classList.add('active');
+                            } else {
+                                indicator.classList.remove('active');
+                            }
+                        });
                     }
                 });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
             });
         });
     </script>
 </body>
 
 </html>
-<!-- 2024062902 -->
