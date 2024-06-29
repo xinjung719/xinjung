@@ -14,18 +14,17 @@
             height: 100%;
             overflow: hidden;
             scroll-behavior: smooth;
-            transition:1s;
         }
 
         body {
             overflow-y: scroll;
             scroll-snap-type: y mandatory;
-            transition:1s;
+            -webkit-overflow-scrolling: touch;
         }
 
         .section {
             width: 100%;
-            /* display: flex; */
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -33,7 +32,6 @@
             color: white;
             scroll-snap-align: start;
             height: 100vh;
-            /* 確保每個 section 都占滿整個視窗高度 */
             overflow: auto;
             -webkit-overflow-scrolling: touch;
         }
@@ -49,19 +47,23 @@
         #section3 {
             background-color: #e74c3c;
         }
-        #section4{
+        
+        #section4 {
             background-color: #1c8411;
         }
 
-        #section5{
+        #section5 {
             background-color: #112a84;
         }
-        #section6{
+
+        #section6 {
             background-color: #841128;
         }
-        #section7{
+
+        #section7 {
             background-color: #117184;
         }
+
         #nav-indicators {
             position: fixed;
             top: 50%;
@@ -95,36 +97,33 @@
         <h1>Section 1</h1>
     </div>
     <div class="section" id="section2">
-        <h1>Section 222222</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
-        <h1>Section 2</h1>
         <h1>Section 2</h1>
     </div>
     <div class="section" id="section3">
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
+        <h1>Section 3</h1>
         <h1>Section 3</h1>
     </div>
     <div class="section" id="section4">
@@ -192,9 +191,19 @@
             sections.forEach(section => {
                 observer.observe(section);
             });
+
+            // 監聽滾動事件，實現自動接續下一個 section
+            sections.forEach((section, index) => {
+                section.addEventListener('scroll', () => {
+                    if (section.scrollTop + section.clientHeight >= section.scrollHeight) {
+                        if (index + 1 < sections.length) {
+                            sections[index + 1].scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                });
+            });
         });
     </script>
 </body>
 
 </html>
-<!-- 20240629 2024062902-->
