@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xinjung</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="./css.css">
 </head>
 
 <body>
     <div class="select-bg">
+        <div class="nav-change-btn">
+            <p>></p>
+        </div>
         <div class="nav">
             <ul>
                 <li>關於我</li>
@@ -54,9 +58,36 @@
                     <div>內容</div>
                 </div>
             </div>
-           
+
         </div>
     </div>
+    <div class="pop-dark"></div>
+    <script>
+        $(document).ready(function () {
+            $(".nav-change-btn").click(function () {
+                $(".nav").toggleClass("nav-show");
+                $(".nav-change-btn").toggleClass("nav-change-btn-active");
+                $(".pop-dark").toggle();
+            });
+            $(".pop-dark").click(function () {
+                $(".nav").removeClass("nav-show");
+                $(".nav-change-btn").removeClass("nav-change-btn-active");
+                $(".pop-dark").hide();
+            });
+        });
+    </script>
+
+    <script>
+        function reportWindowSize() {
+            if (window.innerWidth > 1200) {
+                $(".nav").removeClass("nav-show");
+                $(".nav-change-btn").removeClass("nav-change-btn-active");
+                $(".pop-dark").hide();
+            };
+        }
+        window.onresize = reportWindowSize;
+    </script>
+
 </body>
 
 </html>
