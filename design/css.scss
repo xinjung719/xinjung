@@ -41,6 +41,10 @@ body {
     transition: 1s;
     overflow: hidden;
     position: relative;
+    
+    @media (max-width: $breakpoint-xl) {
+        overflow: auto;
+    }
 
     img {
         font-size: 0;
