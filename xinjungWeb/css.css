@@ -1,23 +1,229 @@
-p {
-    font-size: 0px;
+* {
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 body {
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(238, 241, 255), rgb(250, 235, 255), rgb(255, 235, 252));
+    margin: 0;
+}
+
+p,
+h4 {
     margin: 0;
     padding: 0;
 }
 
-
-.contain {
-    margin: 10px auto;
-    justify-content: center;
+/* navbottom */
+.navbottombar-wrapper {
+    width: 90%;
+    position: fixed;
+    bottom: 12px;
+    background-color: #ffffffdc;
+    border-radius: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 660px;
+    box-shadow: 0px 0px 3px 0px #dcdbdb;
+    backdrop-filter: blur(4px);
 }
 
-.banner {
+@media(max-width:768px) {
+    .navbottombar-wrapper {
+        width: 100%;
+        bottom: 0px;
+        border-radius: 24px 24px 0px 0px;
+        padding-bottom: 6px;
+        box-shadow: 0px 4px 7px #b0b0b0;
+    }
+}
+
+.navbottombar-content {
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+    padding: 4px 8px;
+    justify-content: space-around;
+}
+
+.navbottombar-content div {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
-.banner img {
+.navbottombar-content div p {
+    color: rgb(166, 166, 166);
+    font-size: 14px;
+    display: block;
+    transition: 0.5s;
+}
+
+@media(max-width:768px) {
+    .navbottombar-content div p {
+        display: none;
+        font-size: 12px;
+    }
+}
+
+.navbottombar-content .svg-box {
+    background-color: none;
+    padding: 8px;
+}
+
+@media(max-width:768px) {
+    .navbottombar-content .svg-box {
+        padding: 6px;
+    }
+}
+
+.navbottombar-content div svg {
     width: 100%;
-    max-width: 500px;
+    max-width: 24px;
+    max-height: 24px;
+}
+
+@media(max-width:768px) {
+    .navbottombar-content div svg {
+        max-width: 22px;
+        max-height: 22px;
+    }
+}
+
+svg path {
+    fill: rgb(166, 166, 166);
+    transition: 0.5s;
+}
+
+
+.navbottombar-content div:hover p {
+    color: rgb(250 158 216);
+}
+
+.navbottombar-content div:hover svg path {
+    fill: rgb(250 158 216);
+}
+
+.navbottombar-content .active .svg-box {
+    background-color: #ffa5de;
+    border-radius: 50px;
+    transform: scale(1.5) translateY(-6px);
+    box-shadow: inset 0px 0px 8px 1px #ed8eca, 0px 0px 0px 2px #fff9fe;
+}
+
+.navbottombar-content .active .svg-box svg path {
+    fill: rgb(255, 255, 255);
+}
+
+/* navbottom end */
+
+/* navtop */
+.navtopbar-wrapper {
+    padding: 12px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.navtopbar-wrapper img {
+    width: 100%;
+    max-width: 80px;
+}
+
+/* navtop end*/
+
+/* start */
+.wrapper {
+    background-color: rgba(255, 255, 255, 0.544);
+    border-radius: 32px 32px 0px 0px;
+}
+
+.content {
+    max-width: 1280px;
+    margin: auto;
+    padding: 32px;
+    color: #545454;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding-bottom:94px;
+}
+
+@media(max-width:768px) {
+    .content {
+        gap: 24px;
+    }
+}
+
+.content h4 {
+    color: #545454;
+}
+
+.content a {
+    display: block;
+    text-decoration: none;
+}
+
+.card {
+    display: block;
+    width: calc(100% / 4 - 24px);
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px #b8b1b166;
+    transition: 0.5s;
+}
+
+@media(max-width:1200px) {
+    .card {
+        width: calc(100% / 3 - 24px);
+    }
+    
+}
+@media(max-width:768px) {
+    .card {
+        width: calc(100% / 1 - 0px);
+    }
+    
+}
+.card:hover {
+    box-shadow: 0px 0px 0px #b8b1b166;
+}
+
+.card-img {
+    overflow: hidden;
+    text-align: center;
+    max-height: 134px;
+}
+@media(max-width:768px) {
+    .card-img {
+        max-height: 190px;
+    }
+}
+
+.card-img img {
+    position: relative;
+    width: 100%;
+    transition: 0.5s;
+    left: -50%;
+    transform: translateX(50%) scale(1);
+}
+
+.card:hover .card-img img {
+    left: -50%;
+    transform: translateX(50%) scale(1.1);
+}
+
+.card-content {
+    padding: 12px 16px;
+}
+
+.card-content p span {
+    font-size: 12px;
+    color: rgb(107, 107, 107);
 }
