@@ -185,6 +185,12 @@ svg path {
     }
     
 }
+@media(max-width:900px) {
+    .card {
+        width: calc(100% / 2 - 24px);
+    }
+    
+}
 @media(max-width:768px) {
     .card {
         width: calc(100% / 1 - 0px);
@@ -199,6 +205,11 @@ svg path {
     overflow: hidden;
     text-align: center;
     max-height: 134px;
+}
+@media(max-width:1200px) {
+    .card-img {
+        max-height: 134px;
+    }
 }
 @media(max-width:768px) {
     .card-img {
