@@ -14,19 +14,19 @@ $breakpoint-xl: 1200px;
 
 /* 垂直卷軸上的軌道 */
 ::-webkit-scrollbar-track {
-    background-color: #ffffff62;
+    background-color: rgba(255, 255, 255, 0);
     /* 卷軸的軌道背景顏色 */
 }
 
 /* 垂直卷軸上的滾動條 */
 ::-webkit-scrollbar-thumb {
-    background-color: #cf9aec95;
+    background-color: rgba(255, 255, 255, 0);
     /* 滾動條的顏色 */
 }
 
 /* 選擇滑鼠移動到滾動條上的效果 */
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0);
     /* 滾動條的顏色（當滑鼠移動到上面時） */
 }
 
@@ -57,10 +57,11 @@ body {
         display: flex;
         gap: 20px;
         padding: 24px;
-        height: 100vh;
+    height: calc(100% - 24px);
 
         @media (max-width: $breakpoint-md) {
-            padding: 20px 20px 0px;
+            padding: 20px;
+    height: calc(100% - 20px);
         }
 
         .nav-change-btn {
@@ -179,9 +180,9 @@ body {
                 width: 100%;
             }
 
-            @media (max-width: $breakpoint-md) {
-                height: calc(100vh - 0px);
-            }
+            // @media (max-width: $breakpoint-md) {
+            //     height: calc(100vh - 20px);
+            // }
 
             .web {
                 .web-nav {
